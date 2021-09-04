@@ -1,0 +1,70 @@
+{
+   "metadata": {
+      "prefix": "md",
+      "description": "If a problem was solved, insert this metadata before to push",
+      "body": [
+         "/*",
+         "   ${1:theme} > ${2:topic}",
+         "   difficulty: ${3|easy,medium,hard|}",
+         "   date: ${CURRENT_DATE}/${CURRENT_MONTH_NAME_SHORT}/${CURRENT_YEAR}",
+         "   problem: ${4:abridge problem}",
+         "   hint: ${5:how to do?}",
+         "   by: @brpapa",
+         "*/"
+      ]
+   },
+   "init": {
+      "prefix": "init",
+      "body": [
+         "#include <bits/stdc++.h>",
+         "using namespace std;",
+         "typedef long long ll;",
+         "const int INF = 1 << 30;",
+         "",
+         "int main() {",
+         "   $0",
+         "   return 0;",
+         "}"
+      ]
+   },
+   "fast-debug-1": {
+      "prefix": "d1",
+      "body": [
+         "printf(\"%2d\\n\", $1);"
+      ],
+   },
+   "fast-debug-2": {
+      "prefix": "d2",
+      "body": [
+         "printf(\"%2d %2d\\n\", $1, $2);"
+      ],
+   },
+   "fast-debug-3": {
+      "prefix": "d3",
+      "body": [
+         "printf(\"%2d %2d %2d\\n\", $1, $2, $3);"
+      ],
+   },
+   "fast-debug-1D-array": {
+      "prefix": "da",
+      "body": [
+         "for (int i = 0; i < $1; i++) cout << $2[i] << \" \"; cout << endl;"
+      ]
+   },
+   "fast-debug-2D-array": {
+      "prefix": "daa",
+      "body": [
+         "for (int i = 0; i < $1; i++) {",
+         "   for (int j = 0; j < $2; j++)",
+         "      printf(\"%2d \", $3[i][j]);",
+         "   cout << endl;",
+         "}",
+      ]
+   },
+   "fast-debug-1D-vector": {
+      "prefix": "dv",
+      "body": [
+         "for (auto v : $1) cout << v << \" \"; cout << endl;"
+      ]
+   },
+}

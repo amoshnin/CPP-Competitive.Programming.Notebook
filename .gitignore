@@ -1,0 +1,12 @@
+# cache files
+**/.DS_Store
+
+# tmp
+e
+input
+output
+main.cpp
+
+# files/folders
+.vscode/settings.json
+_*

@@ -1,0 +1,140 @@
+{
+   "tasks": [
+      {
+         "label": "show local readme rendered",
+         "type": "shell",
+         "command": "open ./README.md -a Microsoft\\ Edge",
+         "group": "build",
+         "presentation": {
+            "reveal": "never",
+         },
+         "problemMatcher": []
+      },
+      {
+         "label": "open problem statement",
+         "type": "shell",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "command": "./scripts/open-problem-statement.sh",
+         "args": [
+            "${relativeFileDirname}",
+            "${fileBasenameNoExtension}"
+         ],
+         "group": "build",
+         "presentation": {
+            "reveal": "never",
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "compile and run cpp",
+         "group": "build",
+         "type": "shell",
+         "command": "/usr/bin/g++ ${relativeFile} -std=gnu++17 -O2 -lm -o e && ./e < input > output",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "run py",
+         "group": "build",
+         "type": "shell",
+         "command": "/usr/local/bin/python3 ${relativeFile} < input > output",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "mark as solved",
+         "type": "shell",
+         "command": "./scripts/mark-problem-as-solved.sh",
+         "args": [
+            "${relativeFileDirname}",
+            "${fileBasename}"
+         ],
+         "group": "build",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "quick submit",
+         "type": "shell",
+         "command": "./scripts/quick-submit.sh",
+         "args": [
+            "${relativeFileDirname}"
+         ],
+         "group": "build",
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      },
+      {
+         "label": "create new problem",
+         "type": "shell",
+         "command": "./scripts/create-new-problem.sh",
+         "args": [
+            "${input:judge-name}",
+            "${input:problem-id}",
+         ],
+         "options": {
+            "cwd": "${workspaceFolder}",
+         },
+         "group": "build",
+         "presentation": {
+            "reveal": "silent",
+            "clear": true,
+            "showReuseMessage": false,
+         },
+         "problemMatcher": [],
+      }
+   ],
+   "inputs": [
+      {
+         "id": "judge-name",
+         "description": "Select the folder",
+         "type": "pickString",
+         "options": [
+            "at-coder",
+            "code-jam",
+            "codeforces",
+            "kattis",
+            "live-archive",
+            "spoj",
+            "timus",
+            "uri",
+            "uva"
+         ],
+      },
+      {
+         "id": "problem-id",
+         "description": "Insert the file name",
+         "type": "promptString",
+      }
+   ]
+}
