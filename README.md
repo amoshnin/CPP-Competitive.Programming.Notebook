@@ -111,4 +111,4 @@ The **folders structure** is following:
 # References
 
 - HALIM, Steven. "Competitive Programming 3: The new lower bound of programming contests".
-- Inspired by [Bruno Papa's repository](https://github.com/brpapa/competitive-programming) from where I borrowed the structure, pipeline of algorithms categorization and repetitive tasks automation with unix shell files.
+- Inspired by [Bruno Papa's repository](https://github.com/brpapa/competitive-programming) from where I borrowed the structure, pipeline of algorithms categorization and automation of repetitive tasks with unix shell files.
