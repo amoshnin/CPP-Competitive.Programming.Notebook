@@ -2,7 +2,7 @@
 
 # Overview
 
-I use this repository as a study playground for programming contests, which contains my personal notes and implementations. Note that this is a publish-only repository, so all pull requests will be ignored.
+I use this repository as a study playground for programming contests, which contains my personal notes and implementations.
 
 The **folders structure** is following:
 
@@ -13,7 +13,7 @@ The **folders structure** is following:
 
 # Notebook index
 
-## 🧱 data structures
+## 🧱 Data structures
 
 - [segment tree](./notebook/data-structures/seg-tree.cpp)
 - [lazy segment tree](./notebook/data-structures/seg-tree-lazy.cpp)
@@ -22,11 +22,11 @@ The **folders structure** is following:
 <!-- - SQRT decomposition https://www.spoj.com/problems/RACETIME/en/ -->
 <!-- - Wavelet tree https://github.com/andrefakhoury/competitive-programming/blob/master/lib/DataStructures/WaveletTree.hpp -->
 
-## 🥊 brute force
+## 🥊 Brute force
 
 - []()
 
-## 🔞 dynamic programming
+## 🔞 Dynamic programming
 
 - [coin change](./notebook/dynamic-programming/coin-change.cpp)
 - [subset sum](./notebook/dynamic-programming/subset-sum.cpp)
@@ -40,7 +40,7 @@ The **folders structure** is following:
 - [matrix chain multiplication (MCM)](./notebook/dynamic-programming/mcm.cpp)
 - [rod cutting](./notebook/dynamic-programming/rod-cutting.cpp)
 
-## 🌍 graphs
+## 🌍 Graphs
 
 - [data structures representation](./notebook/graphs/ds-representation.md)
 - **traversal**
@@ -77,7 +77,7 @@ The **folders structure** is following:
          - [binary lifting](./notebook/graphs/lca-binary-lifting.cpp)
          - [eulerian tour](./notebook/graphs/lca-eulerian-tour.cpp)
 
-## ✏️ math
+## ✏️ Math
 
 - **number theory**
    - [fast exponentiation](./notebook/math/fast-power.cpp)
@@ -102,7 +102,7 @@ The **folders structure** is following:
 
 <!-- ## strings -->
 
-## 💭 miscellaneous
+## 💭 Miscellaneous
 
 - [binary search](./notebook/miscellaneous/binary-search.md)
 - [bitmasks](./notebook/miscellaneous/bitmasks.cpp)
@@ -111,3 +111,4 @@ The **folders structure** is following:
 # References
 
 - HALIM, Steven. "Competitive Programming 3: The new lower bound of programming contests".
+- Inspired by [Bruno Papa's repository](https://github.com/brpapa/competitive-programming) from I borrowed the structure and pipeline of algorithms categorization.
